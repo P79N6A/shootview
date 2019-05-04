@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "outDir": "build/dist",
+        "module": "es2015",
+        "noEmit": true,
+        "target": "esnext",
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "sourceMap": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "jsx": "react",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "importHelpers": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "paths": {
+            "@/*" : ["renderer/*"],
+            "~/*" : ["shared/*"]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        "app",
+        "build",
+        "webpack",
+        "jest"
+    ]
+}
